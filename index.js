@@ -27,7 +27,7 @@ app.get('/', (req,res)=>{
 let visitas = 0;
 app.get('/visitas', (req,res)=>{
     if (res){
-        res.send(`nthe number of visits ${visitas++}`)
+        res.send({numberOfVisits : ++visitas})
     }
 });
 
